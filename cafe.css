@@ -1,0 +1,129 @@
+body {
+    background-image: url(cafe.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .header{
+ padding: 30px;
+ background: rgba(0, 0, 0, 0.5);
+ text-align: center;
+ font-size: 100%;
+ font-family:'Times New Roman', Times, serif;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin: 0;
+}
+
+.card {
+background-color: rgba(255, 255, 255, 0.486);
+padding: 10px;
+margin :0;
+text-align: center;
+border-radius: 2px;
+border-style: solid;
+border-color: powderblue;
+height: 50%;
+}
+.bor{
+border-style: solid;
+border-color: powderblue;
+}
+.leftcolumn {   
+float: left;
+width: 25%;
+}
+.rightcolumn{
+float: right;
+width:25%;
+}
+.centercolumn{
+    float: left;
+    width:25%;
+    }
+    .center{
+        float: right;
+        width:25%;
+        }
+.form-popup {
+    border: 5px solid rgb(34, 184, 177);
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    right: 600px;
+    left: 600px;
+    height: auto;
+    width: 420px;
+    z-index: 9;
+    margin: 0;
+  }
+
+  .form-container {
+      padding: 20px;
+    width: 400px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.74);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+
+input[type=number] {
+width:80px;
+height: 20px;
+border:1px solid #ccc;
+padding-left:40px;
+}
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#name {
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#ord{
+    background-repeat:no-repeat;
+background-position:5px 7px  
+}
+#email {
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:10px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:30px
+}
+#submit{
+    background-color: #b1ffeedc;
+    color: rgba(28, 151, 120, 0.664);
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}

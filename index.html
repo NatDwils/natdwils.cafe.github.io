@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <title>cafe.management@ishika.nimade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 80; color: rgb(255, 255, 255)">
+            NatDwils.Cafe@ishika.nimade
+        </h1>
+        <h2 style="color: snow">
+            .....Coffee & Friends are the Perfect Blend.....
+        </h2>
+    </div>
+
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>CoffeeCenter</h2>
+            <div class="bor"></div>
+            <table width="400" height="50">
+                <tr>
+                    <td>CappuccinoCoffee</td>
+                    <td>Rs.50</td>
+                </tr>
+                <tr>
+                    <td>Mochaccino</td>
+                    <td>Rs.80</td>
+                </tr>
+                <tr>
+                    <td>CafeLatte</td>
+                    <td>Rs.150</td>
+                </tr>
+                <tr>
+                    <td>HazelnutCoffee</td>
+                    <td>Rs.100</td>
+                </tr>
+                <tr>
+                    <td>CaramelCoffee</td>
+                    <td>Rs.90</td>
+                </tr>
+                <tr>
+                    <td>CafeFrappe</td>
+                    <td>Rs.40</td>
+                </tr>
+                <tr>
+                    <td>OreoCoffee</td>
+                    <td>Rs.70</td>
+                </tr>
+                <tr>
+                    <td>DoubleDreamBrownie</td>
+                    <td>Rs.200</td>
+                </tr>
+                <tr>
+                    <td>KitkatCoffee</td>
+                    <td>Rs.140</td>
+                </tr>
+                <tr>
+                    <td>SoulLatte</td>
+                    <td>Rs.120</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>About us</h2>
+            <div class="bor"></div>
+            <p>
+                Welcome to CoffeeCenter!</p>
+            <p> We're dedicated to give you the very best COFFEE,</p>
+            <p> with a focus on TASTE, customer service and uniqueness.</p>
+            <p> Founded in 2021 by NatDwils.org , CoffeeCenter has come a long way from its beginnings in a Indore.</p>
+            <p> We hope you enjoy our Coffee </p>
+            <p>as much as we enjoy offering them to you.</p>
+            <p> If you have any questions or comments, please don't hesitate to contact us.</p>
+
+        </div>
+    </div>
+
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Your Bill</h1>
+            <table width="400" height="50">
+                <tr>
+                    <td>SubTotal:</td>
+                    <td><output type="number" id="subtot">Rs.</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td><output type="number" id="tax">Rs.</td>
+                </tr>
+                <tr>
+                    <td>TotalBill:</td>
+                    <td><output type="number" id="total">Rs.</td>
+                </tr>
+            </table>
+            <button type="button" id="submit" onclick="ish()">SHOWBILL</button>
+<img src="qrcode.jpg" style="size: 100%; height: 200px; width: 200px;">
+            <button type="button" id="submit" onclick="closeForm()">PAY</button>
+        </form>
+    </div>
+    </div>
+
+
+    <div class="centercolumn">
+        <div class="card">
+            <h2>PlaceOrder</h2>
+            <div class="bor"></div>
+            <table width="400" height="50">
+                <tr>
+                    <td>CappuccinoCoffee</td>
+                    <td><input type="number" id="ord1" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>Mochaccino</td>
+                    <td><input type="number" id="ord2" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>CafeLatte</td>
+                    <td><input type="number" id="ord3" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>HazelnutCoffee</td>
+                    <td><input type="number" id="ord4" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>CaramelCoffee</td>
+                    <td><input type="number" id="ord5" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>CafeFrappe</td>
+                    <td><input type="number" id="ord6" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>OreoCoffee</td>
+                    <td><input type="number" id="ord7" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>DoubleDreamBrownie</td>
+                    <td><input type="number" id="ord8" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>KitkatCoffee</td>
+                    <td><input type="number" id="ord9" name="order"value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+                <tr>
+                    <td>SoulLatte</td>
+                    <td><input type="number" id="ord0" name="order" value=""
+                            onBlur="calculate(this.value);" /></td>
+                </tr>
+            </table>
+
+            <button id="submit" onclick="openForm()">Order</button>
+        </div>
+    </div>
+
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>FeedBack</h2>
+            <div class="bor"></div>
+            <form >
+                <input id="name" name="name" placeholder="Name" type="text" required>
+                <input id="email" name="email" placeholder="Email" type="text" required>
+                <textarea id="msg" name="message" placeholder="FeedBack" required></textarea>
+                <button id="submit" onclick="abc()">Send</button>
+                </form>
+        </div>
+    </div>
+
+    <div class="header">
+        <h4 style=" color: blanchedalmond;">ContactUs:ishikanimade.cafetaria@</h4>
+    </div>
+</body>
+<script src="cafe.js"></script>
+
+</html>
